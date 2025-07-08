@@ -1,0 +1,18 @@
+# RGBT Bird Detection Dataset Configuration
+# For YOLO-MIF RGBT Training
+
+# Dataset paths - using Kaggle datasets directory
+train: C:/Users/DELL/Documents/skysentinel/datasets/dataset/images/visible/train  # path to training images directory
+val: C:/Users/DELL/Documents/skysentinel/datasets/dataset/images/visible/val      # path to validation images directory
+
+# Number of classes
+nc: 2
+
+# Class names (based on your label file showing class 0)
+names: ['bird', 'drone']
+
+# Notes:
+# - Using relative paths from ultralytics/cfg/datasets/ directory
+# - The model will automatically find infrared images by replacing 'visible' with 'infrared' in the path
+# - Make sure visible and infrared directories are at the same level
+# - Since your IR and RGB images have different naming, you may need to rename them to match
